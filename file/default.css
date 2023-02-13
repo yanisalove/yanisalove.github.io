@@ -1,0 +1,72 @@
+body{margin:0;padding:0;background:#ffe;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;overflow:auto}
+a {color:#000;font-size:14px;}
+#main{width:100%;}
+#wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
+#text{width:272px;
+height:560px;
+left:188px;
+top:80px;position:absolute;
+}
+#code{display:none;font-size:16px;}
+#clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
+#clock-box a {font-size:28px;text-decoration:none;}
+#clock{margin-left:48px;}
+#clock .digit {font-size:36px;}
+#canvas{margin:0 auto;width:1100px;height:680px;}
+#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+.hand{cursor:pointer;}
+.say{margin-left:5px;}
+.space{margin-right:150px;}
+#code {margin-top:10%;text-align: center;    padding-left: 10%;}
+.img-border > img {width: 90%;border-radius: 50px;}
+
+
+.img-border {
+    --b: .7em;
+    /* border width */
+    --c: 4em;
+    /* corner size */
+    --r: 2em;
+    /* corner rounding */
+    position: relative;
+    margin: 1em auto;
+    border: solid var(--b) transparent;
+    padding: 0.5em;
+    max-width: 100%;
+    font: 1.25em ubuntu, sans-serif;
+  }
+  .img-border::before {
+    position: absolute;
+    z-index: -1;
+    inset: calc(-1*var(--b));
+    border: inherit;
+    border-radius: var(--r);
+    background: linear-gradient(orange, deeppink, purple) border-box;
+    --corner:
+        conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
+            0 0/ calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+    --inner: conic-gradient(red 0 0) padding-box;
+    -webkit-mask: var(--corner), var(--inner);
+    -webkit-mask-composite: source-out;
+    mask: var(--corner) subtract, var(--inner);
+    content: "";
+  }
+
+
+.button-switch {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.butt {
+    font-size: 90px;
+    border-radius: 50px;
+}
+
+.img-desc {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 2% auto;
+}
